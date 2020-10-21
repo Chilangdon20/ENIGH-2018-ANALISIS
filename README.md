@@ -8,9 +8,9 @@
   <h3 align="center">ENIGH | ANÁLISIS </h3>
 
   <p align="center">
-    PROYECTO
+    **PROYECTO**
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Chilangdon20/ENIGH-2018-ANALISIS/tree/main/Notebookse"><strong>Explora los documentos»</strong></a>
     <br />
     <br />
    
