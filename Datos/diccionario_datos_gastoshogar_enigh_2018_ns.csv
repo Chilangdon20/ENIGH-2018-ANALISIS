@@ -1,0 +1,132 @@
+Tabla  GASTOSHOGAR,,,,,
+,,,,,
+#,Variable,Descripción,Tipo,Categorías,
+,,,,valor,etiqueta o rango
+1,folioviv,"Identificador de la vivienda compuesto por dos dígitos con la clave de la entidad federativa, uno con el ámbito (urbano, código diferente a 6; rural, código 6), cuatro dígitos del número consecutivo de la upm, un dígito de la decena de levantamiento y dos dígitos con un número consecutivo para la vivienda seleccionada.",C (10),,
+2,foliohog,El código 1 identifica al hogar principal y del 2 al 5 los hogares adicionales.,C (1),,
+3,clave,"Producto, bien o servicio adquirido por los integrantes del hogar en los periodos de referencia.",C (4),,Catálogo de gastos 
+4,tipo_gasto,Tipo de gasto monetario y no monetario.,C (2),,"{G1,...,G3,G5,...,G7}"
+,,,,G1,Gasto monetario en bienes y servicios para el hogar
+,,,,G2,Gasto monetario en bienes y servicios para otro hogar
+,,,,G3,Gasto no monetario procedente de autoconsumo
+,,,,G5,Gasto no monetario por regalos recibidos de otro hogar
+,,,,G6,Gasto no monetario por transferencias de instituciones
+,,,,G7,Gasto imputado por estimación del alquiler
+5,mes_dia,Mes y día en la que se realizó la compra.,C (4),,Catálogo de mes y día
+6,forma_pag1,Forma en la que se pagaron los artículos o servicios.,C (2),,"{00,...,10}"
+,,,,0,No aplica
+,,,,1,Efectivo
+,,,,2,Fiado (persona particular o establecimiento comercial)
+,,,,3,Domiciliación
+,,,,4,Transferencia electrónica de fondos
+,,,,5,Tarjeta de crédito
+,,,,6,Tarjeta de débito
+,,,,7,Cheque
+,,,,8,Vale
+,,,,9,Pago móvil
+,,,,10,Otro
+7,forma_pag2,Forma en la que se pagaron los artículos o servicios.,C (2),,"{00,...,10}"
+,,,,0,No aplica
+,,,,1,Efectivo
+,,,,2,Fiado (persona particular o establecimiento comercial)
+,,,,3,Domiciliación
+,,,,4,Transferencia electrónica de fondos
+,,,,5,Tarjeta de crédito
+,,,,6,Tarjeta de débito
+,,,,7,Cheque
+,,,,8,Vale
+,,,,9,Pago móvil
+,,,,10,Otro
+8,forma_pag3,Forma en la que se pagaron los artículos o servicios.,C (2),,"{00,...,10}"
+,,,,0,No aplica
+,,,,1,Efectivo
+,,,,2,Fiado (persona particular o establecimiento comercial)
+,,,,3,Domiciliación
+,,,,4,Transferencia electrónica de fondos
+,,,,5,Tarjeta de crédito
+,,,,6,Tarjeta de débito
+,,,,7,Cheque
+,,,,8,Vale
+,,,,9,Pago móvil
+,,,,10,Otro
+9,lugar_comp,"Lugar en donde compraron o consumieron los alimentos, las bebidas y/o el tabaco los integrantes del hogar.",C (2),,"{00,...,18}"
+,,,,0,No aplica
+,,,,1,Mercado
+,,,,2,Tianguis o mercado sobre ruedas
+,,,,3,Vendedores ambulantes
+,,,,4,Tiendas de abarrotes
+,,,,5,Tiendas específicas del ramo 
+,,,,6,Supermercados
+,,,,7,Tiendas departamentales
+,,,,8,Compras fuera del país
+,,,,9,Tiendas con membresía
+,,,,10,Tiendas de conveniencia
+,,,,11,Restaurantes
+,,,,12,"Loncherías, fondas, torterías , cocinas económicas, cenadurías"
+,,,,13,Cafeterías
+,,,,14,"Pulquería, cantina o bar"
+,,,,15,Diconsa
+,,,,16,Lechería Liconsa
+,,,,17,Persona particular
+,,,,18,Internet
+10,orga_inst,Organización o institución pública o privada de la cual se recibió algún artículo o servicio.,C (2),,"{00,...,09}"
+,,,,0,No aplica
+,,,,1,Gobierno Municipal
+,,,,2,Gobierno Estatal
+,,,,3,Gobierno Federal
+,,,,4,Sedesol
+,,,,5,PROSPERA
+,,,,6,Institución privada
+,,,,7,Liconsa
+,,,,8,Diconsa
+,,,,9,Comedores comunitarios
+11,frecuencia,Frecuencia que recibe en Regalos el Hogar provenientes de otro hogar.,C (1),,"{0,...,6}"
+,,,,0,No aplica
+,,,,1,Diario
+,,,,2,Cada Semana
+,,,,3,Una vez al mes
+,,,,4,Cada año
+,,,,5,Lo recibió una sola vez
+,,,,6,Otros
+12,fecha_adqu,Fecha de adquisición de artículos,C (4),,Catálogo de fechas adquisición
+13,fecha_pago,Fecha de inicio de pagos,C (4),,Catálogo de fechas de pago
+14,cantidad,"Número de unidades, forma de presentación por artículo y servicios que los integrantes del hogar recibieron como ayuda por parte de alguna institución a un precio menor o sin costo.","N (10,3)",,Catálogo de unidades de medida 
+15,gasto,Gasto realizado por el producto o servicio obtenido.,"N (10,2)",,
+16,pago_mp,Gasto mensual total realizado por el producto o servicio obtenido.,"N (10,2)",,
+17,costo,"Costo o valor del producto, artículo o servicio que se acordó entre los integrantes del hogar y los proveedores en los periodos de referencias e independientemente de si se haya o no cubierto la totalidad o parte del pago en estos mismos lapsos.","N (10,2)",,
+18,inmujer,Gasto realizado en productos o servicios obtenidos para las mujeres o niñas.,"N (10,2)",,
+19,inst_1,Nombre de la institución pública o privada que proporciona los productos y servicios para el cuidado de la salud.,C (2),,"{01,...,13}"
+,,,,1,"Médicos, laboratorios y hospitales particulares"
+,,,,2,Servicios médicos del IMSS
+,,,,3,Servicios médicos del ISSSTE
+,,,,4,Servicios médicos de PEMEX
+,,,,5,Servicios médicos de la Marina
+,,,,6,Servicios médicos del Ejército
+,,,,7,Servicios médicos de la SSA
+,,,,8,SSA con Seguro Popular
+,,,,9,Servicios médicos del DIF
+,,,,10,Servicios médicos de universidades públicas
+,,,,11,"Otros servicios médicos:Cruz Roja, Cruz Verde, etcétera"
+,,,,12,"Servicios médicos provenientes del programa PROGRESA, OPORTUNIDADES o PROSPERA"
+,,,,13,Provenientes de otro hogar
+20,inst_2,Nombre de la institución pública o privada que proporciona los productos y servicios para el cuidado de la salud.,C (2),,"{01,...,13}"
+,,,,1,"Médicos, laboratorios y hospitales particulares"
+,,,,2,Servicios médicos del IMSS
+,,,,3,Servicios médicos del ISSSTE
+,,,,4,Servicios médicos de PEMEX
+,,,,5,Servicios médicos de la Marina
+,,,,6,Servicios médicos del Ejército
+,,,,7,Servicios médicos de la SSA
+,,,,8,SSA con Seguro Popular
+,,,,9,Servicios médicos del DIF
+,,,,10,Servicios médicos de universidades públicas
+,,,,11,"Otros servicios médicos:Cruz Roja, Cruz Verde, etcétera"
+,,,,12,"Servicios médicos provenientes del programa PROGRESA, OPORTUNIDADES o PROSPERA"
+,,,,13,Provenientes de otro hogar
+21,num_meses,Número de meses que abarca el recibo.,N (2),,
+22,num_pagos,Número de veces que ha pagado el recibo en los últimos 12 meses.,N (2),,
+23,ultim_pago,Fecha (mes y año) del último recibo pagado contra recibo.,C (4),,Catálogo de fechas de pago
+24,gasto_tri,Gasto trimestral normalizado de acuerdo a la decena de levantamiento. Solo se trimestralizaron los gastos realizados en el periodo de referencia.,"N (12,2)",,
+25,gasto_nm,Gasto realizado por el producto o servicio obtenido.,"N (10,2)",,
+26,gas_nm_tri,Gasto no monetario trimestral normalizado de acuerdo a la decena de levantamiento.,"N (12,2)",,
+27,imujer_tri,Gasto monetario trimestral normalizado de acuerdo a la decena de levantamiento en productos o servicios obtenidos para las mujeres o niñas.,"N (12,2)",,
